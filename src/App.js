@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./Welcome";
+import Sum from "./Sum";
 
 const hello = "Hello, World!";
 
@@ -11,6 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>{hello}</h1>
         <Welcome />
+        <Sum />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
