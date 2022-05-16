@@ -1,11 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Sum from "./Sum";
 
 const hello = <h1> Hello, World!</h1>;
 
 const welcome = (name) => {
   return <h1>{name}</h1>;
+};
+
+const sum = (a, b) => {
+  return (
+    <div>
+      <h2>{a + b}</h2>
+    </div>
+  );
 };
 
 function App() {
@@ -15,6 +22,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         {hello}
         {welcome("Eric")}
+        {sum(2, 3)}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -26,7 +34,6 @@ function App() {
         >
           Learn React
         </a>
-        <Sum />
       </header>
     </div>
   );
