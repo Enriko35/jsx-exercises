@@ -1,16 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Welcome from "./Welcome";
+import Sum from "./Sum";
 
-const hello = "Hello, World!";
+const hello = <h1> Hello, World!</h1>;
+
+const welcome = (name) => {
+  return <h1>{name}</h1>;
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>{hello}</h1>
-        <Welcome />
+        {hello}
+        {welcome("Eric")}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
